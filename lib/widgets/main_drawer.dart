@@ -27,20 +27,21 @@ class MainDrawer extends StatelessWidget {
             ),
             child: Row(
               children: [
-                Icon(Icons.fastfood,
-                    size: 48, color: Theme.of(context).colorScheme.primary),
+                Icon(
+                  Icons.fastfood,
+                  size: 48,
+                  color: Theme.of(context).colorScheme.primary,
+                ),
                 const SizedBox(width: 18),
                 Text(
-                  "Cooking up!",
+                  'Cooking Up!',
                   style: Theme.of(context).textTheme.titleLarge!.copyWith(
                         color: Theme.of(context).colorScheme.primary,
-                        // fontWeight: FontWeight.bold,
                       ),
-                )
+                ),
               ],
             ),
           ),
-          const SizedBox(height: 24),
           ListTile(
             leading: Icon(
               Icons.restaurant,
@@ -55,8 +56,7 @@ class MainDrawer extends StatelessWidget {
                   ),
             ),
             onTap: () {
-              onSelectScreen("meals");
-              // Navigator.pushReplacementNamed(context, '/');
+              onSelectScreen('meals');
             },
           ),
           ListTile(
@@ -73,7 +73,7 @@ class MainDrawer extends StatelessWidget {
                   ),
             ),
             onTap: () {
-              onSelectScreen("filters");
+              onSelectScreen('filters');
             },
           ),
         ],
